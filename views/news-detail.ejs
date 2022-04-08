@@ -1,0 +1,10 @@
+<% include partials/header.ejs %> 
+
+<div class="info">
+    <img alt="News Pic" src="http://localhost:8080/images/upload_images/<%=data.image%>" class="image-in-detail"> 
+    <h5><%= data.title %></h5>
+    <div class="date">Published date: <%= data.date.toDateString() %></div>
+    <div class="description"><p><%= data.description %></p></div>
+</div>
+
+<% include partials/footer.ejs %>

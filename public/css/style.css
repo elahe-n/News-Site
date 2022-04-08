@@ -1,0 +1,284 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+  }
+
+ 
+body {
+  font-family:Arial, Helvetica, sans-serif "Helvetica Neue", sans-serif;
+  color: #302f2f;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  margin-top: 40px;
+  justify-content:space-evenly;
+}
+  
+  a:hover {
+    text-decoration: none;
+    color:#000000;
+  }
+  
+  a {
+    color:#302f2f;
+  }
+
+  nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 60px;
+    background-color: #363535;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 15px 40px;
+    align-items: center;
+  }
+  
+  .nav-a
+  {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+
+  .nav-a:hover
+  {
+    color: rgb(222, 221, 221);
+    text-decoration: none;
+  }
+
+  h2{
+    margin: 15px;
+  }
+
+ul {
+    list-style: none;
+    padding-inline-start:0;
+    margin-top: 2rem;
+  }
+
+li {
+  margin: 5px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  border-radius: 1rem;
+}
+
+.news-list{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:10px;
+  padding: 20px 25px;
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.headline{
+max-width: 250px;
+word-wrap: break-word;
+}
+
+.desc {
+  display: block;
+  width: 250px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 20px;
+  padding-left: 10px;
+}
+
+.image-div{
+ margin:0 15px;
+}
+
+.image{
+  height: 150px;
+  width: auto;
+  max-width: 200px;
+  border-radius: 15px;
+}
+
+.image-in-detail{
+  height: 200px;
+  width: auto;
+  max-width: 300px;
+  border-radius: 15px;
+  object-fit: contain;
+  margin: 0 30px ;
+}
+
+.image-div{
+  display: flex;
+}
+
+.delete,.edit {
+  background: #dadada;
+  padding: 4px 8px;
+  cursor: pointer;
+  margin-left: 5px;
+  border-radius: 15px;
+}
+
+.delete:hover,.edit:hover {
+  transition: ease-in-out;
+  filter:brightness(95%);
+}
+
+.submit{
+  padding: 10px 15px;
+  border:0;
+  border-radius: 8px;
+}
+
+.submit:hover{
+  filter:brightness(90%)
+}
+
+input {
+  padding:5px 15px;
+  margin: 10px;
+  border-radius: 0.75rem;
+  font-size: 0.85rem;
+  outline: none;
+  border: 1px solid #ccc;
+}
+
+Textarea {
+  background: #ffffff;
+  border-radius: 1rem;
+  outline: none;
+  font-size: 0.85rem;
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding:5px 15px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border-radius: 10px;
+}
+.title{
+  text-align: left;
+}
+
+form {
+  margin:-30px 25px 0 25px;
+  text-align: center; 
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin:0 100px;
+  
+}
+
+.date{
+  font-size: 10px;
+}
+
+.description{
+  word-wrap: break-word;
+  width: 900px;
+  text-align: justify;
+}
+
+footer {
+  background-color: #363535;
+  color: rgb(234, 230, 230);
+  text-align: center;
+  text-transform: capitalize;
+  padding: 0.5rem 0;
+  font-size: 12px;
+}
+
+
+@media screen and (max-width: 50rem) {
+
+  body {
+    min-height: 100vh;
+    margin-top: 70px;
+    font-size: 0.5rem;
+  }
+
+  .news-list{
+    grid-template-columns: repeat(1, 1fr);
+    gap:5px;
+    padding: 5px;
+    margin-top: 15px;
+   }
+
+   h2{
+    margin: 0 10px 0px 10px;
+  }
+
+   li {
+    margin: 2px;
+    padding: 5px;
+  }
+
+   input {
+    padding:2px 7px;
+    margin: 5px;
+    font-size: 0.5rem;
+  }
+  
+  Textarea {
+    font-size: 0.5rem;
+    margin: 5px;
+    padding:2px 7px;
+  }
+  
+  form {
+    margin:10px 40px 0 10px;
+    text-align: center; 
+  }
+  
+  .info{
+    margin:5px 10px;
+  }
+  
+.desc {
+  width: 100px;
+  margin-top: 5px;
+}
+
+.image-div{
+ margin:0 7px;
+}
+
+.image{
+  height: 75px;
+  max-width: 100px;
+}
+
+.image-in-detail{
+  height: 100px;
+  max-width: 120px;
+}
+
+.delete,.edit {
+  margin-bottom: 5px;
+  padding: 2px 5px;
+}
+
+.description{
+  word-wrap: break-word;
+  width: 300px;
+  text-align: justify;
+}
+
+
+}

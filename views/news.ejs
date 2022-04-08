@@ -1,0 +1,19 @@
+<% include partials/header.ejs %> 
+
+
+
+<form action="/update-news" method="post" role="form" enctype="multipart/form-data">
+    <br>
+    <br>
+    <div class="title"><h2>Edit...</h2></div>
+    <div class="input-group">
+        <input type="text" id="newsTitle" name="newsTitle" value="<%= data.title %>"/>
+        <textarea id="newsDesc" name="newsDesc" rows="10" cols="50"><%= data.description %></textarea>
+        <input type="hidden" name="id" value="<%= data.id %>"/>
+        <label for="uploaded_image" >Change image</label>
+        <input  type="file" name="uploaded_image" accept=""/> 
+    </div>
+    <input type="submit" class="submit" />
+</form>
+
+<% include partials/footer.ejs %>

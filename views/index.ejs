@@ -1,0 +1,29 @@
+<% include partials/header.ejs %> 
+
+<% if (data.length>0) { %>
+    <ul class="news-list">
+            <% data.forEach(news => { %>
+                <li>
+                    <div class="content">
+                        <div>
+                            <a href="/news-detail/<%= news.id %>" style="text-decoration: none"><b><div class="headline"><%= news.title %></div></b></a>
+                            <span class="desc"><%= news.description %></span>
+                        </div>
+                        <div class="image-div"> 
+                            <img alt="News Pic" src="http://localhost:8080/images/upload_images/<%=news.image%>" class="image">  
+                        </div>
+                    </div>
+                <div class="icons">
+                    <a href="/news/<%= news.id %>" style="text-decoration: none"><span class="edit" id="<%= news.id %>">✏️</span></a>
+                    <span class="delete" id="<%= news.id %>">❌</span>  
+               </div>
+            </li>
+        <% }) %>
+    </ul>
+<% } else { %>
+        <h3>No news found</h3>
+<% } %>
+
+<% include partials/footer.ejs %>    
+
+<script src="/index.js"></script>

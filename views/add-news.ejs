@@ -1,0 +1,17 @@
+<% include partials/header.ejs %> 
+
+<form method="POST" action="/add-news-submit" role="form" enctype="multipart/form-data" >
+    <br>
+    <br>
+    <div class="title"><h2>Write a new one...</h2></div>
+    <br>
+    <div class="input-group">
+      <input type="text" id="newsTitle" name="newsTitle" placeholder="Title" required>
+      <textarea id="newsDesc" name="newsDesc"  rows="10" cols="50" placeholder="Description"></textarea>
+      <label for="uploaded_image" >Add image</label>
+      <input  type="file" name="uploaded_image" accept=".jpg,.png,.jpeg,.webp" className="formInputFile" required/>                    
+    </div>
+    <input type="submit" class="submit">
+  </form>
+  
+<% include partials/footer.ejs %> 
