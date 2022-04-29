@@ -9,7 +9,7 @@ body {
  
 /* font-family: 'Cabin Condensed', sans-serif; */
 /* font-family: 'Cormorant Unicase', serif; */
-font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #302f2f;
   display: flex;
   flex-direction: column;
@@ -17,6 +17,7 @@ font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
   margin-top: 40px;
   justify-content:space-between;
+  overflow: scroll;
 }
   
   a:hover {
