@@ -16,11 +16,11 @@ app.use(fileUpload());
 
 
 const connection = mysql.createConnection({
-    user: 'root',
-    password: '',
-    host: 'localhost',
+    user: 'u7f0p3y6hce7eonz',
+    password: '8EEtzUBhtoFaK6bwPgIf',
+    host: 'bw1aon6any7g4y3mof9u-mysql.services.clever-cloud.com',
     port: 3306,
-    database: 'newsdb'
+    database: 'bw1aon6any7g4y3mof9u'
   });
   
 connection.connect(err => {
