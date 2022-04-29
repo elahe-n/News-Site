@@ -1,18 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&family=Cabin+Condensed&family=Cormorant+Unicase:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+
 *{
-    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
   }
 
  
 body {
-  font-family:Arial, Helvetica, sans-serif "Helvetica Neue", sans-serif;
+ 
+/* font-family: 'Cabin Condensed', sans-serif; */
+/* font-family: 'Cormorant Unicase', serif; */
+font-family: 'Montserrat', sans-serif;
   color: #302f2f;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   min-height: 100vh;
   margin-top: 40px;
-  justify-content:space-evenly;
+  justify-content:space-between;
 }
   
   a:hover {
@@ -37,6 +41,7 @@ body {
     list-style: none;
     padding: 15px 40px;
     align-items: center;
+    font-family: 'Alegreya Sans SC', sans-serif;
   }
   
   .nav-a
@@ -173,16 +178,17 @@ Textarea {
 }
 
 form {
-  margin:-30px 25px 0 25px;
+  margin:20px 25px 0 25px;
   text-align: center; 
 }
 
 .info{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin:0 100px;
-  
+  justify-content: center;
+  margin:30px 100px 0 100px;
+  flex-grow: 1;  
+  gap:1rem;
 }
 
 .date{
@@ -202,6 +208,7 @@ footer {
   text-transform: capitalize;
   padding: 0.5rem 0;
   font-size: 12px;
+  justify-items: flex-end;
 }
 
 
